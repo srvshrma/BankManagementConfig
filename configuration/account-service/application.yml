@@ -1,7 +1,7 @@
-server:
-  port: 8081
   
-spring:  application:    name: account-service
+spring:
+  application:
+    name: account-service
   datasource:
     url: jdbc:mysql://localhost:3306/bank_management
     username: root
@@ -16,4 +16,6 @@ eureka:
     fetch-registry: true
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-  
+logging:
+  pattern:
+    file:  "%d{yyyy-MM-dd HH:mm:ss}------- %-5level----------- - %msg%n"  
