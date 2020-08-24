@@ -9,3 +9,6 @@ spring:
     hibernate:
       ddl-auto: update
     generate-ddl: true
+logging:
+  pattern:
+    file:  "%d{yyyy-MM-dd HH:mm:ss}------- %-5level----------- - %msg%n"
